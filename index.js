@@ -1,6 +1,15 @@
 import { Client, Collection, GatewayIntentBits } from 'discord.js';
 import fs from 'fs';
-import config from './config.json' assert { type: "json" };
+import rawConfig from './config.json' assert { type: "json" };
+
+const config = {
+  ...rawConfig,
+  token: process.env.token,
+  clientId: process.env.clientId,
+  guildId: process.env.guildId,
+  modChannelId: process.env.modChannelId
+};
+
 
 const client = new Client({
   intents: [
