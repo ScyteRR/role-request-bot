@@ -1,7 +1,0 @@
-{
-  "token": "env_token",
-  "clientId": "env_clientId",
-  "guildId": "env_guildId",
-  "modChannelId": "env_modChannelId",
-  "roleGroups": {}
-}
